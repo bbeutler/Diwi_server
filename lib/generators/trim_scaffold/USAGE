@@ -1,0 +1,13 @@
+Description:
+    uses the scaffold config in /config/application.rb to generate a model and then creates a swagger defintion file
+
+Example:
+    rails generate trim_scaffold Thing
+
+    This will create:
+        db/migrate/20190709191937_create_model.rb
+        app/models/model.rb
+        spec/models/models_spec.rb
+        spec/factories/models.rb
+        app/controllers/models_controller.rb
+        spec/requests/models_spec.rb

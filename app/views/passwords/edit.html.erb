@@ -1,0 +1,38 @@
+<div class="o-login-holder">
+
+  <div class="a-logo"></div>
+  <h2 style="text-align: center;">Reset password</h2>
+
+  <div class="m-login-form">
+    <%= form_for(@user, url: password_path(params[:id])) do |f| %>
+
+      <%= hidden_field_tag :token, params[:token] %>
+
+      <%= f.password_field :password, placeholder: "Password" %>
+
+      <%= f.password_field :password_confirmation, placeholder: "Password Confirmation" %>
+
+      <%= f.submit "Update password" %>
+
+    <% end %>
+  </div>
+</div>
+
+<% if @success %>
+  <div class="password_updated">
+    <h3><%= @success %></h3>
+  </div>
+<% end %>
+
+<% if @user.errors.any? %>
+  <div class="error_explanation">
+    <div class="alert alert-danger">
+        The form contains <%= pluralize(@user.errors.count, "error") %>.
+    </div>
+    <ul>
+      <% @user.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

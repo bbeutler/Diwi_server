@@ -1,0 +1,9 @@
+test:
+  host: 'elasticsearch:9200'
+  prefix: 'test'
+development:
+  host: 'elasticsearch:9200'
+staging:
+  host: <%= ENV['BONSAI_URL'] %>
+production:
+  host: <%= ENV['BONSAI_URL'] %>

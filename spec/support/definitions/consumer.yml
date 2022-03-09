@@ -1,0 +1,15 @@
+consumer:
+  type: object
+  properties:
+    id:
+      type: integer
+    first_name:
+      type: string
+    last_name:
+      type: string
+    created_at:
+      type: string
+      format: date-time
+    updated_at:
+      type: string
+      format: date-time

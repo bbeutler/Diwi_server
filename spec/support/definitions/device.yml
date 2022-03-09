@@ -1,0 +1,19 @@
+device:
+  type: object
+  properties:
+    id:
+      type: integer
+    platform:
+      type: string
+    device_token:
+      type: string
+    enabled:
+      type: boolean
+    consumer_id:
+      type: integer
+    created_at:
+      type: string
+      format: date-time
+    updated_at:
+      type: string
+      format: date-time

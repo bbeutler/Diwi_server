@@ -1,0 +1,16 @@
+photo:
+  type: object
+  properties:
+    id:
+      type: integer
+    image:
+      type: string
+      format: byte
+    look_id:
+      type: integer
+    created_at:
+      type: string
+      format: date-time
+    updated_at:
+      type: string
+      format: date-time

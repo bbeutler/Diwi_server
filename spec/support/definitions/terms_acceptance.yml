@@ -1,0 +1,18 @@
+terms_acceptance:
+  type: object
+  properties:
+    id:
+      type: integer
+    accepted_at:
+      type: string
+      format: date-time
+    remote_ip:
+      type: string
+    consumer_id:
+      type: integer
+    created_at:
+      type: string
+      format: date-time
+    updated_at:
+      type: string
+      format: date-time
